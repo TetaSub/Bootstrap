@@ -46,6 +46,25 @@
     font-display: swap;
 }
 
+%regular {
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-weight: 400;
+}
+
+%light {
+    font-family: 'Basis Grotesque Pro Light';
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+%bold {
+    font-family: 'Basis Grotesque Pro Bold';
+    font-style: normal;
+    font-weight: 700;
+}
+
 @mixin cover-background {
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,7 +72,10 @@
 }
 
 @mixin custom-block-p {    
-    @media all and (min-width:708px) and (max-width:1023.98px) {
+    @media all and (max-width:777.98px) {
+        padding: 50px;
+    }
+    @media all and (min-width:768px) and (max-width:1023.98px) {
         padding: 100px;
     }
     @media all and (min-width:1024px) {
@@ -61,22 +83,21 @@
     }
 }
 
-@mixin no-border-radius {
+@mixin btn-no-radius {
     border-radius: 0 !important;
 }
 
 @mixin btn-blue-styles {
     background-color: #0536FC;
-    font-family: "Basis Grotesque Pro";
-    font-style: normal;
-    font-weight: 400;
+    @extend %regular;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #ffff;
     border: none;
-    padding: 15px auto;
+    @include btn-no-radius;
+    padding: 15px 50px;
     margin-top: 70px;
 }
 
@@ -98,9 +119,7 @@ body {
 }
 
 .section__tag {
-    font-family: 'Basis Grotesque Pro Bold';
-    font-style: normal;
-    font-weight: 700;
+    @extend %bold;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.03em;
@@ -114,9 +133,7 @@ body {
 }
 
 .section__subtitle {
-    font-family: 'Basis Grotesque Pro Bold';
-    font-style: normal;
-    font-weight: 700;
+    @extend %bold;
     font-size: 38px;
     line-height: 111%;
     letter-spacing: -0.03em;
@@ -126,64 +143,63 @@ body {
 }
 
 .section__text {
-        font-family: 'Basis Grotesque Pro';
-        font-style: normal;
-        font-weight: 400; 
-        font-size: 16px; 
-        line-height: 150%; 
-        letter-spacing: -0.03em; 
-        color: #000000; 
-        opacity: 0.6;
+    @extend %regular;
+    font-size: 16px; 
+    line-height: 150%; 
+    letter-spacing: -0.03em; 
+    color: #000000; 
+    opacity: 0.6;
 }
 
 .section__description {
-        font-family: 'Basis Grotesque Pro Light';
-        font-style: normal;
-        font-weight: 300; 
-        font-size: 16px; 
-        line-height: 150%; 
-        letter-spacing: -0.03em; 
-        color: #000000; 
-        opacity: 0.35;
+    @extend %light;
+    font-size: 16px; 
+    line-height: 150%; 
+    letter-spacing: -0.03em; 
+    color: #000000; 
+    opacity: 0.35;
 }
 
 .btn_blue {
-    @include button-blue-styles;
+    @include btn-blue-styles;
+}
+
+.nav-link {
+    @extend %regular;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    @include btn-no-radius;
+    color: #0536FC;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.nav-link.active {
+    color: #ffff !important;
+    background-color: #0536FC !important;
 }
 
 .section-header {
     @include custom-block-p;
 }
 
-.nav-item_custom {
-    @include button-blue-styles;
-}
-
 .section-body {
     background-image: url("./img/about-background-xl.jpg");
-    background-image: image-set("./img/about-background-xl.jpg" 3x, "./img/about-background-lg.jpg" 2x, "./img/about-background-sm.jpg" 1x);    
+    background-image: image-set("./img/about-background-xl.jpg" 2x, "./img/about-background-lg.jpg" 1x);
     @include cover-background;
 }
 
-
 .section-content {
-    padding: 120px 240px 146px 120px;
-    margin-left: 50%;
-    margin-top: 30%;
+    @include custom-block-p;
 }
 
-
-    @media all and (min-width:708px) and (max-width:1023.98px) {
+@media all and (min-width: 768px) {
     .section-content {
-        padding: 100px;
+    margin-top: 30%;
+    margin-left: 50%;
     }
 }
-
-    @media all and (min-width:1024px) {
-    .section-content {padding: 120px 240px 146px 120px;
-    }
-}
-    
 
 
 

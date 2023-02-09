@@ -22,6 +22,24 @@
   font-weight: 300;
   font-display: swap;
 }
+.nav-link, .btn_blue, .section__text {
+  font-family: "Basis Grotesque Pro";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.section__description {
+  font-family: "Basis Grotesque Pro Light";
+  font-style: normal;
+  font-weight: 300;
+}
+
+.section__subtitle, .section__tag {
+  font-family: "Basis Grotesque Pro Bold";
+  font-style: normal;
+  font-weight: 700;
+}
+
 *,
 *:before,
 *:after {
@@ -39,9 +57,6 @@ body {
 }
 
 .section__tag {
-  font-family: "Basis Grotesque Pro Bold";
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.03em;
@@ -54,9 +69,6 @@ body {
 }
 
 .section__subtitle {
-  font-family: "Basis Grotesque Pro Bold";
-  font-style: normal;
-  font-weight: 700;
   font-size: 38px;
   line-height: 111%;
   letter-spacing: -0.03em;
@@ -66,9 +78,6 @@ body {
 }
 
 .section__text {
-  font-family: "Basis Grotesque Pro";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.03em;
@@ -77,9 +86,6 @@ body {
 }
 
 .section__description {
-  font-family: "Basis Grotesque Pro Light";
-  font-style: normal;
-  font-weight: 300;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.03em;
@@ -89,32 +95,76 @@ body {
 
 .btn_blue {
   background-color: #0536FC;
-  font-family: "Basis Grotesque Pro";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: white;
   border: none;
+  border-radius: 0 !important;
   padding: 15px 50px;
   margin-top: 70px;
-  border-radius: 0;
 }
 
 .nav-link {
-  border-radius: 0;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  border-radius: 0 !important;
+  color: #0536FC;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.nav-link.active {
+  color: white !important;
+  background-color: #0536FC !important;
+}
+
+@media all and (max-width: 777.98px) {
+  .section-header {
+    padding: 50px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023.98px) {
+  .section-header {
+    padding: 100px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .section-header {
+    padding: 120px 240px 146px 120px;
+  }
 }
 
 .section-body {
   background-image: url("./img/about-background-xl.jpg");
-  background-image: -webkit-image-set(url("about-background-xl.jpg") 2x, url("about-background-lg.jpg") 1x, "about-background-sm.jpg" 0.5x);
-  background-image: image-set("about-background-xl.jpg" 2x, "about-background-lg.jpg" 1x, "about-background-sm.jpg" 0.5x);
+  background-image: -webkit-image-set(url("./img/about-background-xl.jpg") 2x, url("./img/about-background-lg.jpg") 1x);
+  background-image: image-set("./img/about-background-xl.jpg" 2x, "./img/about-background-lg.jpg" 1x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 900px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+@media all and (max-width: 777.98px) {
+  .section-content {
+    padding: 50px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023.98px) {
+  .section-content {
+    padding: 100px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .section-content {
+    padding: 120px 240px 146px 120px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .section-content {
+    margin-top: 30%;
+    margin-left: 50%;
+  }
+}/*# sourceMappingURL=styles.css.map */
