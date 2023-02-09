@@ -34,7 +34,7 @@
   font-weight: 300;
 }
 
-.section__subtitle, .section__tag {
+.section__subtitle, .section__title, .section__tag {
   font-family: "Basis Grotesque Pro Bold";
   font-style: normal;
   font-weight: 700;
@@ -66,6 +66,15 @@ body {
   color: #0536FC;
   opacity: 0.9;
   margin-bottom: 30px;
+}
+
+.section__title {
+  font-size: 57px;
+  line-height: 104%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 70px;
 }
 
 .section__subtitle {
@@ -160,6 +169,10 @@ body {
   .section-content {
     padding: 120px 240px 146px 120px;
   }
+}
+
+.section__text {
+  margin-right: 10%;
 }
 
 @media all and (min-width: 768px) {

@@ -132,6 +132,16 @@ body {
     }
 }
 
+.section__title {
+    @extend %bold;
+    font-size: 57px;
+    line-height: 104%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 70px;
+}
+
 .section__subtitle {
     @extend %bold;
     font-size: 38px;
@@ -192,6 +202,10 @@ body {
 
 .section-content {
     @include custom-block-p;
+}
+
+.section__text {
+    margin-right: 10%;
 }
 
 @media all and (min-width: 768px) {
