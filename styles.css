@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url("./fonts/basis/BasisGrotesquePro-Regular.woff2") format("woff2"), url("./fonts/basis/BasisGrotesquePro-Regular.woff") format("woff"), url("./fonts/basis/BasisGrotesquePro-Regular.ttf") format("truetype"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.woff2") format("woff2"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.woff") format("woff"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basis Grotesque Pro Bold";
+  src: url("./fonts/basis/BasisGrotesquePro-Bold.woff2") format("woff2"), url("./fonts/basis/BasisGrotesquePro-Bold.woff") format("woff"), url("./fonts/basis/BasisGrotesquePro-Bold.ttf") format("truetype"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Bold.woff2") format("woff2"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Bold.woff") format("woff"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basis Grotesque Pro Medium";
+  src: url("./fonts/basis/BasisGrotesquePro-Medium.woff2") format("woff2"), url("./fonts/basis/BasisGrotesquePro-Medium.woff") format("woff"), url("./fonts/basis/BasisGrotesquePro-Medium.ttf") format("truetype"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Medium.woff2") format("woff2"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Medium.woff") format("woff"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basis Grotesque Pro Light";
+  src: url("./fonts/basis/BasisGrotesquePro-Light.woff2") format("woff2"), url("./fonts/basis/BasisGrotesquePro-Light.woff") format("woff"), url("./fonts/basis/BasisGrotesquePro-Light.ttf") format("truetype"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Light.woff2") format("woff2"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Light.woff") format("woff"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Basis Grotesque Pro", "Basis Grotesque Pro Bold", "Basis Grotesque Pro Medium", "Basis Grotesque Pro Light";
+  vertical-align: baseline;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.section__tag {
+  font-family: "Basis Grotesque Pro Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.section__tag_blue {
+  color: #0536FC;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.section__subtitle {
+  font-family: "Basis Grotesque Pro Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 70px;
+}
+
+.section__text {
+  font-family: "Basis Grotesque Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.section__description {
+  font-family: "Basis Grotesque Pro Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  opacity: 0.35;
+}
+
+.btn_blue {
+  background-color: #0536FC;
+  font-family: "Basis Grotesque Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  padding: 15px 50px;
+  margin-top: 70px;
+  border-radius: 0;
+}
+
+.nav-link {
+  border-radius: 0;
+}
+
+.section-body {
+  background-image: url("./img/about-background-xl.jpg");
+  background-image: -webkit-image-set(url("about-background-xl.jpg") 2x, url("about-background-lg.jpg") 1x, "about-background-sm.jpg" 0.5x);
+  background-image: image-set("about-background-xl.jpg" 2x, "about-background-lg.jpg" 1x, "about-background-sm.jpg" 0.5x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+}
+
+/*# sourceMappingURL=styles.css.map */
